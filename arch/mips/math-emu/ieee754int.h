@@ -71,7 +71,7 @@
 
 
 #define COMPXSP \
-  unsigned xm; int xe; int xs; int xc
+  unsigned xm __attribute__((unused)); int xe; int xs __attribute__((unused)); int xc
 
 #define COMPYSP \
   unsigned ym; int ye; int ys; int yc
@@ -105,7 +105,7 @@
 
 
 #define COMPXDP \
-u64 xm; int xe; int xs; int xc
+u64 xm; int xe; int xs __attribute__((unused)); int xc
 
 #define COMPYDP \
 u64 ym; int ye; int ys; int yc

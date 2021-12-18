@@ -1122,7 +1122,7 @@ static int __cpuinit probe_scache(void)
 	unsigned long flags, addr, begin, end, pow2;
 	unsigned int config = read_c0_config();
 	struct cpuinfo_mips *c = &current_cpu_data;
-	int tmp;
+	int tmp __attribute__((unused));
 
 	if (config & CONF_SC)
 		return 0;
